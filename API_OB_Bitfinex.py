@@ -12,9 +12,7 @@ logtime =  datetime.datetime.now()
 logging.info("Starting the program at " + str(logtime));
 
 try:
-    Bitfinex_cnx = mysql.connector.connect(user='dataapplab', password = 'gaojizhongxue123',
-                                       host='exchangedata.cluster-c4dhxbzodofv.us-west-2.rds.amazonaws.com',
-                                       database='BitfinexDB')
+    Bitfinex_cnx = mysql.connector.connect(add your database info)
 except:
     logging.error('not able to connect to database');
 
